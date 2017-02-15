@@ -124,7 +124,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
 
 
@@ -158,9 +158,9 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #FFFFFF; }
 a:hover {
-  color: #0FA0CE; }
+  color: #F8A4BC; }
 
 
 /* Buttons
@@ -206,8 +206,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0; }
+  background-color: #F8A4BC;
+  border-color: #F8A4BC; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -219,8 +219,8 @@ input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #FFF;
-  background-color: #1EAEDB;
-  border-color: #1EAEDB; }
+  background-color: #A4DFF8;
+  border-color: #A4DFF8; }
 
 
 /* Forms
@@ -266,7 +266,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border: 1px solid #FCDCE5;
   outline: 0; }
 label,
 legend {
@@ -422,27 +422,56 @@ there.
 
 #navlist li
 {
-display: inline;
+display: inline-block;
 list-style-type: none;
-padding-right: 20px;
-<<<<<<< HEAD
+padding-right: 100px;
+font: 20px futura, sans-serif;
+
 }
 
-.hero {
-  background-image: url(http://i65.tinypic.com/bhangy.png);
-  background-size: cover;
+
+
+body > header {
+    background: url(../images/headerBG.png) top center no-repeat;
+    background-size: cover;
+    min-height: 900px;
+    width: 100%;
 }
 
-.shop {
-   background-image: url(http://imgur.com/a/hG4u3);
-  background-size: cover; 
-}
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
 
-/* Contact
+
+
+/* Shop
 ------------------------------------------------ */
-.story {
-  background-image: url(http://imgur.com/a/9GElK);
-  background-size: cover;
-=======
+.shop h1 {
+    font: 70px futura, sans-serif;
+    color: #FCDCE5;
 }
->>>>>>> 5330ab27d8af7c3f517f96fb70406432ee7d43c5
+
+.shop h2 {
+    font: 34px futura, sans-serif;
+    
+}
+
+/* Story
+------------------------------------------------ */
+.story h1{
+    
+}
+
+.story h2{
+    margin-top: -30px;
+    font: 30px futura, san-serif;
+}
+
+/* Footer
+------------------------------------------------ */
+body > footer {
+    background: url(../images/BottomBG.png) bottom center no-repeat;
+    background-size: cover;
+    min-height: 900px;
+    width: 100%;
