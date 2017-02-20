@@ -432,7 +432,7 @@ font: 20px futura, sans-serif;
 
 
 body > header {
-    background: url(../images/headerBG.png) top center no-repeat;
+    background: url(../images/UpdateHeaderBG2.png) top center no-repeat;
     background-size: cover;
     min-height: 900px;
     width: 100%;
@@ -456,7 +456,69 @@ IMG.displayed {
     font: 34px futura, sans-serif;
     
 }
+button.btn-big {
+        background-color: #F8A4BC;
+        border-color: #F8A4BC;
+        padding: 40px  60px; 
+        font-size: 18px;
+        color: white;
+        line-height: 10px;
+    }
 
+#switcher-wrapper {
+    width: 500px;
+    margin: 20px auto;
+    position: relative;
+    
+}
+#switcher-wrapper a {
+    display: block;
+    width: 500px;
+    height: 160px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#one{
+    background: url(../images/SchoolSupplyShirt.png);
+}
+
+#two{
+    background: url(../images/PaperplaneShirt.png) ; 
+    z-index: 1;
+}
+
+#three{
+    background: url(../images/rulershirt.png) ;
+}
+
+
+#switcher-wrapper a span {
+    position: absolute;
+}
+
+#one span {
+    left: 0;
+    bottom: 10px;
+}
+
+#2 span {
+    left: 0;
+    bottom: 10px;
+}
+#3 span {
+    left: 0;
+    bottom: 10px;
+}
+/* Footer
+------------------------------------------------ */
+footer {
+    background: url(../images/BottomBG.png) bottom center no-repeat;
+    background-size: cover;
+    min-height:1300px;
+    width: 100%;
+}
 /* Story
 ------------------------------------------------ */
 .story h1{
@@ -471,7 +533,9 @@ IMG.displayed {
 /* Footer
 ------------------------------------------------ */
 body > footer {
-    background: url(../images/BottomBG.png) bottom center no-repeat;
+    
+    background: url(../images/BottomBG.png) top center no-repeat;
     background-size: cover;
     min-height: 900px;
-    width: 100%;
+    min-width: 100%;
+}
