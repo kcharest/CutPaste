@@ -503,14 +503,21 @@ button.btn-big {
     bottom: 10px;
 }
 
-#2 span {
-    left: 0;
+#two span {
+    left: 120;
     bottom: 10px;
 }
-#3 span {
-    left: 0;
+#three span {
+    left: 200;
     bottom: 10px;
 }
+
+#switcher-wrapper a:hover { 
+    z-index: 1;
+
+}
+
+
 /* Footer
 ------------------------------------------------ */
 footer {
