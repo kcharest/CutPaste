@@ -25,6 +25,18 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
+    
+<!-- Image Switcher
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+    
+<!-- Smooth Scroll
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->    
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="javascript/smoothscroll.js"></script>
+  
 
 </head>
 <body>
@@ -35,7 +47,8 @@
 
 <!-- HEADER -->    
     
-<header>   
+<header>
+     <a name="top"></a>
     <div class="container">
         <div class="row">
         <div class="twelve columns" style="margin-top: 25%">
@@ -48,9 +61,9 @@
             <div class="tweleve columns offset-by-three" style="margin-top: 15%">
                 <div id="navcontainer">
                     <ul class="displayed" id="navlist">
-                        <li id="active"><a href="#" id="current">ABOUT</a></li>
-                        <li><a href="#">SHOP</a></li>
-                        <li><a href="#">CONTACT US</a></li>
+                        <li id="active"><a href="#story" id="current" class="smoothScroll">ABOUT</a></li>
+                        <li><a href="#shop" class="smoothScroll">SHOP</a></li> 
+                        <li><a href="#contact" class="smoothScroll">CONTACT US</a></li>
 
                     </ul>
                 </div>
@@ -61,11 +74,11 @@
     
     
 <!-- SHOP --> 
-    
+     <a name="shop"></a>
 <div class="section shop">     
   <div class="container">
     <div class="row">
-      <div class="twelve columns" style="margin-top: 20%">
+      <div class="twelve columns" style="margin-top: 25%">
 
           <h1 style="text-align:right"><b>FRESH STYLES</b></h1>
         <H2 style="text-align:right; margin-top:-30px">100% COTTON. 100% COOL.</H2>   
@@ -73,29 +86,37 @@
       </div>
       </div>
     
-    <div class="row">
-      <div class="one-half column" style="margin-top: 20%">
-      
-        <div id="switcher-wrapper">
-            <a id="one" heref="#"> <span>Style 1</span></a>
-            <a id="two" heref="#"> <span>Style 2</span></a>
-            <a id="three" heref="#"> <span>Style 3</span></a>
-             
-        </div>
-       </div>
-      </div>  
-      
+
       
         <div class="row">
-            <div class="one-half column" style="margin-top: 20%">
-                <h4><b>SCHOOL HOUSE TEE</b></h4>
-                <p>One quality made garment designed and manufactured in the USA. It was created with special pigments and fabrics then washed for superior feel and fit. .</p>
-        
+  <div class="six columns" style="margin-top: 20%">  
+<div class="cycle-slideshow" 
+    data-cycle-fx=scrollHorz
+    data-cycle-timeout=0
+    data-cycle-pager="#no-template-pager"
+    data-cycle-pager-template=""
+    >
+    <img src="images/SchoolSupplyShirt.png">
+    <img src="images/PaperplaneShirt.png">
+    <img src="images/rulershirt.png">
+    
+</div>
+
+      </div>
             
-             
-       </div>
             <form>
-                <div class="six columns">
+                <div class="six columns" style="margin-top: 20%">
+                      <h4><b>SCHOOL HOUSE TEE</b></h4>
+                <p>One quality made garment designed and manufactured in the USA. It was created with special pigments and fabrics then washed for superior feel and fit. </p>
+                    
+                    <div id=no-template-pager class="cycle-pager external">
+    <!-- using thumbnail image files would be even better! -->
+    <img src="images/PatternIcon_Supply.png" width=40 height=40>
+    <img src="images/PatternIcon_Plane.png" width=40 height=40> 
+    <img src="images/PatternIcon_Ruler.png" width=40 height=40> 
+    
+</div>
+        
                     <label for="exampleRecipientInput">Size</label>
                         <select class="u-full-width" id="exampleRecipientInput">
                             <option value="Option 1">X Small</option>
@@ -105,57 +126,93 @@
                             <option value="Option 3">X Large</option>
                         </select>
             </form>
+                    <a class="button" href="#">Add to Cart</a>  
                 </div>
-    <a class="button" href="#">Add to Cart</a>  
-        </div>
-    
-     
-            
- 
-          
-        <div class="row">
-            <div class="one-half column" style="margin-top: 15%">
-                <h4><b>STUDY HALL KNAPSACK</b></h4>
+      </div>
+      
+     <div class="row">
+         
+         <div class="six columns" style="margin-top: 20%">
+                      <h4><b>STUDY HALL KNAPSACK</b></h4>
                 <p>One quality made accessory designed and manufactured in the USA. It was created with special pigments and fabrics and created to withstand the wear and tear of your busy life.</p>
-                <img src="images/PlanePrintRectangle.png">
-                <img src="images/SupplyPrintRectangle.png"> 
-                <div><a class="button" href="#">Add to Cart</a> </div>
-            </div>
+                    
+                    <div id=no-template-pager class="cycle-pager external">
+    <!-- using thumbnail image files would be even better! -->
+    <img src="images/PatternIcon_Plane.png" width=40 height=40>
+    <img src="images/PatternIcon_Supply.png" width=40 height=40> 
    
-            
-            <div class="one-half column" style="margin-top: 10%">
-                <img src="images/PlanePack.png">
-            </div>
-        </div>    
+</div>
+        
+             
+                    <a class="button" href="#">Add to Cart</a> 
+             
+                </div>
+         
+  <div class="six columns" style="margin-top: 20%">  
+<div class="cycle-slideshow" 
+    data-cycle-fx=scrollHorz
+    data-cycle-timeout=0
+    data-cycle-pager="#no-template-pager"
+    data-cycle-pager-template=""
+    >
+    <img src="images/planepack.png">
+    <img src="images/supplypack.png">
+</div>
 
-        <div class="row">
-            <div class="one-half column" style="margin-top: 10%">
-                <img src="images/RulerBag.png">
-            </div>
-          
-        <div class="row">
-            <div class="one-half column" style="margin-top: 15%">
-                <h4><b>GET TO WORK TOTE</b></h4>
-                <p>One quality made accessory designed and manufactured in the USA. It was created with special pigments and fabrics and created to withstand the wear and tear of your busy life.</p>
-                <img src="images/RulerPrintRectangle.png">    
-                <img src="images/SupplyPrintRectangle.png">
-                <img src="images/PlanePrintRectangle.png">
-            </div> 
+      </div>
             
-                <a class="button" href="#">Add to Cart</a>   
+            
+                
+
         </div>
+      
+      <div class="row">
+        <div class="six columns" style="margin-top: 20%">  
+            <div class="cycle-slideshow" 
+                data-cycle-fx=scrollHorz
+                data-cycle-timeout=0
+                data-cycle-pager="#no-template-pager"
+                data-cycle-pager-template=""
+            >
+                <img src="images/RulerBag.png">
+                <img src="images/SupplyBag.png">
+                <img src="images/PlaneBag.png">
+   
+            </div>
+
+      </div>
+            
+            
+                <div class="six columns" style="margin-top: 20%">
+                      <h4><b>GET TO WORK TOTE</b></h4>
+                <p>One quality made accessory designed and manufactured in the USA. It was created with special pigments and fabrics and created to withstand the wear and tear of your busy life.</p>
+                    
+                    <div id=no-template-pager class="cycle-pager external">
+    <!-- using thumbnail image files would be even better! -->
+                        <img src="images/PatternIcon_Ruler.png" width=40 height=40>
+                        <img src="images/PatternIcon_Supply.png" width=40 height=40> 
+                        <img src="images/PatternIcon_Plane.png" width=40 height=40> 
+
+                    </div>
+        
+                            <a class="button" href="#">Add to Cart</a>  
+                </div>
+
         </div>
              
         <div class="row">
             <div class="two columns offset-by-four" style="margin-top: 15%">
-           <a href="#"><button class="btn-big">GO TO CHECKOUT</button></a> 
-            </div>       
+                <a href="#"><button class="btn-big">GO TO CHECKOUT</button></a> 
+               
+            </div>   
+            
+           
             
           </div>           
       </div>
    
 <!-- OUR STORY -->
-        
+    <a name="story"></a>
      <div class="section values">
         <div class="container">
 
@@ -195,6 +252,7 @@
 
 
   <footer>
+    <a name="contact"></a>
      <div class="row">
          <div class="twelve columns" style="margin-top: 25%">
             <h2 style="text-align: center">CONTACT US</h2>
@@ -210,9 +268,11 @@
         
     </div>             
     </div>
-    </div>
+    
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
+
+
 
